@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+<div class="container">
+    <div id="titlebox">
+        <h1 id="title">Survey Form</h1>
+ <p id="description">Please fill out the survey form below.</p>
+    </div>
+
+
+<form id="survey-form">
+ <label for="name" id="name-label">Name:</label>
+ <input type="text" id="name" placeholder="Enter your name" required>
+<label for="email" id="email-label">Email:</label>
+ <input type="email" id="email" placeholder="Enter your email" required>
+<label for="number" id="number-label">Age(Optional):</label>
+<input type="number" id="number" placeholder="Enter a number" min="1" max="100" required>
+ <label for="dropdown">Select an option:</label>
+<select id="dropdown">
+<option value="" disabled selected>Select your current position</option>
+<option value="option2">CEO</option>
+<option value="option2">Manager</option>
+<option value="option2">Developer</option>
+<option value="option2">Jr. Developer</option>
+<option value="option2">Intern</option>
+</select>
+
+<label>Choose one:</label>
+<label><input type="radio" name="radio-group" value="paid"> Paid </label>
+<label><input type="radio" name="radio-group" value="unpaid">Unpaid</label>
+
+<label>Choose what is you improvement:</label>
+<label><input type="checkbox" name="checkbox-group" value="front-end"> Fornt-End</label>
+<label><input type="checkbox" name="checkbox-group" value="back-end"> Back-End</label>
+<label><input type="checkbox" name="checkbox-group" value="database"> Database</label>
+<label><input type="checkbox" name="checkbox-group" value="server-site"> Server-site</label>
+
+<label for="comments">Add about your new skill:</label>
+<textarea id="comments" placeholder="Enter your speech...." cols="20" rows="5"></textarea>
+<button type="submit" id="submit">Submit</button>
+</form>
+</div>
+</body>
+</html>
